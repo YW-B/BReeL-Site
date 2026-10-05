@@ -14,6 +14,7 @@ const siteConfig = {
     highTicket: "https://calendly.com/yahiawaleed/", // $197+ one-time 1:1 campaign
     apply: "https://calendly.com/yahiawaleed/", // Shadow operating (50/50) application
     agency: "https://calendly.com/yahiawaleed/",
+    calculator: "https://breel-lm-1-calc.vercel.app/", // free lead magnet: Whop Business OS Calculator
     igBreel: "https://www.instagram.com/breel_ar/",
     igYahia: "https://www.instagram.com/darealyehi/",
     igHassan: "https://www.instagram.com/__abnz/",

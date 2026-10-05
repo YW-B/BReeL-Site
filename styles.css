@@ -172,9 +172,9 @@ body.is-scrolled .header-wrap::before {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: clamp(18px, 2.8vw, 28px);
+  gap: clamp(14px, 2.2vw, 24px);
   width: 100%;
-  max-width: 720px;
+  max-width: 840px;
   animation: slideDown 0.7s var(--ease-out) both;
 }
 
@@ -208,7 +208,7 @@ body.is-scrolled .header-wrap::before {
   align-items: center;
   justify-content: space-around;
   height: clamp(44px, 5.2vw, 48px);
-  max-width: 490px;
+  max-width: 580px;
   padding: 4px 8px;
   border-radius: 999px;
   background: #fff;
@@ -1182,6 +1182,83 @@ body.menu-open {
   white-space: nowrap;
 }
 
+/* Resources page */
+.offers-2 {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+/* wide cards → landscape covers so they don't tower over the copy */
+.offers-2 .cover {
+  aspect-ratio: 16 / 10;
+}
+
+.offers-2 .cover::before {
+  inset: 18px 26%;
+}
+
+.cover-calc {
+  background:
+    radial-gradient(90% 70% at 100% 0%, rgba(37, 99, 235, 0.55), transparent 60%),
+    radial-gradient(80% 60% at 0% 100%, rgba(245, 158, 11, 0.4), transparent 60%),
+    #050a1f;
+}
+
+.cover-calc::before {
+  border-color: rgba(253, 224, 71, 0.55);
+  box-shadow: 0 0 24px rgba(59, 130, 246, 0.35), inset 0 0 24px rgba(245, 158, 11, 0.12);
+}
+
+.cover-calc .cover-sub,
+.cover-calc .cover-icon {
+  color: #fcd34d;
+}
+
+.cover-calc .cover-icon {
+  border-color: rgba(253, 224, 71, 0.8);
+  box-shadow: 0 0 14px rgba(245, 158, 11, 0.45);
+}
+
+.cover-keep {
+  background:
+    radial-gradient(90% 70% at 100% 0%, rgba(20, 184, 166, 0.45), transparent 60%),
+    radial-gradient(80% 60% at 0% 100%, rgba(147, 51, 234, 0.4), transparent 60%),
+    #06121a;
+}
+
+.cover-keep::before {
+  border-color: rgba(94, 234, 212, 0.55);
+  box-shadow: 0 0 24px rgba(20, 184, 166, 0.3), inset 0 0 24px rgba(20, 184, 166, 0.12);
+}
+
+.cover-keep .cover-sub,
+.cover-keep .cover-icon {
+  color: #5eead4;
+}
+
+.cover-keep .cover-icon {
+  border-color: rgba(94, 234, 212, 0.8);
+  box-shadow: 0 0 14px rgba(20, 184, 166, 0.45);
+}
+
+.inline-link {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: rgba(255, 255, 255, 0.35);
+}
+
+.inline-link:hover {
+  text-decoration-color: #fff;
+}
+
+.calc-note-center {
+  max-width: 640px;
+  margin: clamp(22px, 3vh, 30px) auto 0;
+  text-align: center;
+}
+
 /* CSS glass cover — only for offers without cover art yet (e.g. community memberships) */
 .cover {
   position: relative;
@@ -1822,6 +1899,7 @@ body.menu-open {
   }
 
   .split,
+  .offers-2,
   .compare,
   .phases,
   .offers,
@@ -1845,6 +1923,18 @@ body.menu-open {
   .tab {
     padding: 0 14px;
     font-size: 13.5px;
+  }
+}
+
+@media (min-width: 721px) and (max-width: 940px) {
+  .nav-link {
+    padding: 0 5px;
+    font-size: 13px;
+  }
+
+  .sign-in {
+    padding: 0 14px;
+    font-size: 13px;
   }
 }
 

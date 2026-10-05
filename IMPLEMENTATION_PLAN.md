@@ -68,6 +68,9 @@ The hero still fills the first screen, and the page now scrolls into these secti
 ### Affiliate page ✅ done (`affiliate.html`, served at `/affiliate` on Vercel via `vercel.json` cleanUrls)
 Hero "Share BReeL. Keep 40%.", then How it works (4 steps), What you can promote ($10.80 per $27 OS sale, $18.80 per $47 OS sale, 40% of community memberships), an earnings calculator, perks (swipe kits, leaderboards, Whop payouts, learning the operator model), FAQ and contact. Every "Join" / "Become an Affiliate" button uses `siteConfig.links.affiliateJoin`.
 
+### Resources page ✅ done (`resources.html`, served at `/resources`)
+Hero "Free Tools. Real Numbers.", then a 2-card library: the **Whop Business OS Calculator** (live lead magnet at breel-lm-1-calc.vercel.app, `siteConfig.links.calculator`, UTM-tagged) and **Keep by BReeL** (coming soon, awaiting Whop approval). Also a 4-step walkthrough of the calculator (Audience → Offers → Superpowers → Results) with its benchmark disclaimer, and an Apply CTA. "Resources" is in the nav on every page.
+
 ### Phase 4 — Conversion & interaction hooks
 - ✅ External links: `target="_blank"`, `rel="noopener"`, UTM per placement.
 - Filter tabs for the Products section (vanilla JS, `aria-selected`, hash-synced).
