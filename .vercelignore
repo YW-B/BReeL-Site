@@ -1,0 +1,4 @@
+# internal docs — keep in the repo, never serve publicly
+IMPLEMENTATION_PLAN.md
+.gitignore
+.vercelignore

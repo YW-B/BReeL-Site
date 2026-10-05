@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>BReeL | You Stay The Face. We Run The Engine.</title>
+    <meta
+      name="description"
+      content="BReeL is a shadow operator agency for creators with 20k–500k followers. We build and run your digital product backend — offers, Whop, DM funnels, launches — and split net profit 50/50."
+    />
+    <meta name="theme-color" content="#000000" />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+
+    <!-- OpenGraph / Twitter (swap og:url + og:image to absolute URLs once the domain is live) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="BReeL" />
+    <meta property="og:title" content="BReeL | You Stay The Face. We Run The Engine." />
+    <meta
+      property="og:description"
+      content="Shadow operating for content-rich, offer-poor creators. We build the backend, you stay the face, we split net profit 50/50."
+    />
+    <meta property="og:image" content="assets/og.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="BReeL | You Stay The Face. We Run The Engine." />
+    <meta
+      name="twitter:description"
+      content="Shadow operating for content-rich, offer-poor creators. Zero upfront risk, 50/50 net profit split."
+    />
+    <meta name="twitter:image" content="assets/og.jpg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://db.onlinewebfonts.com/c/8cb707a9b8a73f8a7403336b861c3074?family=BubbledotICG-FinePos"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script>document.documentElement.classList.add("js");</script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body id="top">
+    <div class="bg" aria-hidden="true">
+      <video class="bg-video" autoplay muted loop playsinline>
+        <source
+          src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260809_012548_ef22562c-c0ae-4816-ad9d-f8922af4e6a7.mp4"
+          type="video/mp4"
+        />
+      </video>
+    </div>
+
+    <!-- 1) Header (fixed, sticky across the page) -->
+    <div class="header-wrap">
+      <header class="header">
+        <a class="logo" href="#top" aria-label="BReeL home">
+          <img src="assets/logo.webp" alt="" width="52" height="52" />
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <a class="nav-link is-active" href="#top" data-nav="home" aria-current="true">Home</a>
+          <a class="nav-link" href="#products" data-nav="products">Products</a>
+          <a class="nav-link" href="#agency" data-nav="agency">Agency</a>
+          <a class="nav-link" href="affiliate.html" data-nav="affiliates">Affiliates</a>
+          <a class="nav-link" href="#contact" data-nav="contact">Contact</a>
+        </nav>
+
+        <a class="sign-in" href="#products">Shop</a>
+
+        <button
+          class="burger"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </header>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="menu-overlay" hidden></div>
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <nav class="mobile-nav" aria-label="Mobile">
+        <a class="m-link is-active" href="#top" data-nav="home" aria-current="true" style="--i: 0">Home</a>
+        <a class="m-link" href="#products" data-nav="products" style="--i: 1">Products</a>
+        <a class="m-link" href="#agency" data-nav="agency" style="--i: 2">Agency</a>
+        <a class="m-link" href="affiliate.html" data-nav="affiliates" style="--i: 3">Affiliates</a>
+        <a class="m-link" href="#contact" data-nav="contact" style="--i: 4">Contact</a>
+        <a class="m-sign-in" href="#products" style="--i: 5">Shop</a>
+      </nav>
+    </div>
+
+    <div class="page" data-section="home">
+      <div class="header-spacer" aria-hidden="true"></div>
+
+      <!-- 2) Hero -->
+      <main class="hero">
+        <div class="trust anim" style="--d: 0.05s">
+          <span class="trust-avatar a1"><span class="trust-inner"><i class="fa-brands fa-instagram" aria-hidden="true"></i></span></span>
+          <span class="trust-avatar a2"><span class="trust-inner"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></span></span>
+          <span class="trust-avatar a3"><span class="trust-inner"><i class="fa-brands fa-youtube" aria-hidden="true"></i></span></span>
+          <span class="trust-pill">For creators with 20k–500k followers</span>
+        </div>
+
+        <h1 class="headline anim">
+          <span class="line l1">You Stay The Face.</span>
+          <span class="line l2">We Run The Engine.</span>
+        </h1>
+
+        <p class="subhead anim" style="--d: 0.28s">
+          We build and run your entire product backend — offers, Whop, DM funnels —
+          and split net profit 50/50 with zero risk to you.
+        </p>
+
+        <a
+          class="cta anim"
+          href="https://calendly.com/yahiawaleed/"
+          data-link="apply"
+          data-utm="hero-cta"
+          target="_blank"
+          rel="noopener"
+          style="--d: 0.4s"
+          >Apply to Partner</a
+        >
+      </main>
+
+      <!-- 3) Stats -->
+      <section class="stats" aria-label="How BReeL partners">
+        <div class="stat anim" style="--d: 0.5s">
+          <span class="stat-icon" aria-hidden="true">%</span>
+          <span class="stat-value" data-target="50" data-suffix="/50" data-decimals="0">50/50</span>
+          <span class="stat-label">Net Profit Split</span>
+        </div>
+        <div class="stat anim" style="--d: 0.58s">
+          <span class="stat-icon" aria-hidden="true">$</span>
+          <span class="stat-value" data-target="0" data-prefix="$" data-decimals="0">$0</span>
+          <span class="stat-label">Upfront Cost</span>
+        </div>
+        <div class="stat anim" style="--d: 0.66s">
+          <span class="stat-icon" aria-hidden="true">&gt;</span>
+          <span class="stat-value" data-target="14" data-suffix="-Day" data-decimals="0">14-Day</span>
+          <span class="stat-label">Launch Sequence</span>
+        </div>
+        <div class="stat anim" style="--d: 0.74s">
+          <span class="stat-icon" aria-hidden="true">#</span>
+          <span class="stat-value" data-target="4" data-suffix="-Tier" data-decimals="0">4-Tier</span>
+          <span class="stat-label">Revenue Stack</span>
+        </div>
+      </section>
+    </div>
+
+    <!-- ===================================================================
+         Below the fold
+         =================================================================== -->
+
+    <!-- The model -->
+    <section class="section" id="agency" data-section="agency">
+      <div class="section-head reveal">
+        <p class="eyebrow">The Shadow Operator Model</p>
+        <h2 class="section-title">Your Shop Is Display&#8209;Only.</h2>
+        <p class="section-lede">
+          Your audience is already looking in with wallets in hand: DMs, comments,
+          “where can I buy this?” But the door is padlocked shut. BReeL builds the door,
+          runs the register and splits what comes through it 50/50.
+        </p>
+      </div>
+
+      <div class="split">
+        <article class="card lane lane-operator reveal" style="--d: 0.05s">
+          <p class="lane-tag">BReeL · The Operator</p>
+          <h3 class="card-title">Everything behind the curtain</h3>
+          <ul class="ticks">
+            <li>Offer architecture &amp; product outlines from your top content</li>
+            <li>Full Whop storefront &amp; technical setup</li>
+            <li>Notion OS hubs &amp; automated ManyChat DM funnels</li>
+            <li>Automated revenue splits, configured on day one</li>
+            <li>Day-to-day community management &amp; campaign optimization</li>
+          </ul>
+        </article>
+
+        <article class="card lane reveal" style="--d: 0.12s">
+          <p class="lane-tag">You · The Creator</p>
+          <h3 class="card-title">Stay in your zone of genius</h3>
+          <ul class="ticks">
+            <li>Film 8–10 simple video modules</li>
+            <li>Post the story launch assets on time</li>
+            <li>Show up for your students in the Whop community</li>
+          </ul>
+          <p class="card-foot">No face from us. No extra work from you. Zero disruption to your content schedule.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 14-day launch -->
+    <section class="section" id="launch" data-section="agency">
+      <div class="section-head reveal">
+        <p class="eyebrow">Execution Roadmap</p>
+        <h2 class="section-title">14 Days. Phased For Trust.</h2>
+        <p class="section-lede">
+          A sprint-style launch sequence with every metric tracked. No cold pitching your
+          audience: we warm them up, earn the trust, then open the cart.
+        </p>
+      </div>
+
+      <ol class="phases">
+        <li class="card phase reveal" style="--d: 0.05s">
+          <span class="phase-days">Days 1–3</span>
+          <h3 class="card-title">Warm-Up &amp; Curiosity</h3>
+          <ul class="ticks">
+            <li>Mystery-driven polls &amp; teasers</li>
+            <li>No sales links, just attention</li>
+          </ul>
+        </li>
+        <li class="card phase reveal" style="--d: 0.12s">
+          <span class="phase-days">Days 4–9</span>
+          <h3 class="card-title">Trust &amp; Objection Handling</h3>
+          <ul class="ticks">
+            <li>Story-driven micro-lessons</li>
+            <li>Visual case studies</li>
+          </ul>
+        </li>
+        <li class="card phase reveal" style="--d: 0.19s">
+          <span class="phase-days">Days 10–14</span>
+          <h3 class="card-title">Open Cart &amp; Urgency</h3>
+          <ul class="ticks">
+            <li>Automated ManyChat checkout links</li>
+            <li>Capped intake scarcity</li>
+            <li>High-converting funnel goes live</li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Revenue stack -->
+    <section class="section" id="stack" data-section="agency">
+      <div class="section-head reveal">
+        <p class="eyebrow">The 4-Tier Revenue Stack</p>
+        <h2 class="section-title">Views In. Cash Flow Out.</h2>
+        <p class="section-lede">
+          Every partner gets a full value ladder, so each view has somewhere to go, from
+          the first DM to the highest-value client.
+        </p>
+      </div>
+
+      <div class="tiers">
+        <article class="card tier reveal" style="--d: 0.04s">
+          <span class="tier-num">01</span>
+          <h3 class="card-title">Lead Magnet &amp; Entry</h3>
+          <p class="tier-price">$27–$47</p>
+          <p class="card-text">A high-value Notion tool or PDF guide delivered by ManyChat DM automation. It turns casual Reel viewers into buyers and pays back content costs.</p>
+        </article>
+        <article class="card tier reveal" style="--d: 0.1s">
+          <span class="tier-num">02</span>
+          <h3 class="card-title">Whop Community</h3>
+          <p class="tier-price">$197<small>/mo</small></p>
+          <p class="card-text">The core subscription hub with pods, Q&amp;As and progress channels. Predictable monthly recurring revenue.</p>
+        </article>
+        <article class="card tier reveal" style="--d: 0.16s">
+          <span class="tier-num">03</span>
+          <h3 class="card-title">High-Ticket Backend</h3>
+          <p class="tier-price">$1,000–$3,000+</p>
+          <p class="card-text">Done-for-you services, 1:1 mentorship or private partner access that captures maximum lifetime value.</p>
+        </article>
+        <article class="card tier reveal" style="--d: 0.22s">
+          <span class="tier-num">04</span>
+          <h3 class="card-title">Continuity &amp; Affiliates</h3>
+          <p class="tier-price">$49–$297<small>/mo</small></p>
+          <p class="card-text">Recurring access, tool bundles and affiliate referral loops that compound profit over the long term.</p>
+        </article>
+      </div>
+
+      <p class="stack-note reveal">Every tier runs on the same <strong>50/50 net profit split</strong>.</p>
+
+      <div class="builds reveal">
+        <p class="builds-label">What we build inside your Whop</p>
+        <ul class="chips">
+          <li>High-converting landing page + upsell paths</li>
+          <li>Member onboarding checklist</li>
+          <li>Points, leaderboards &amp; badges</li>
+          <li>Netflix-style course modules</li>
+          <li>Churn red-flag reports → reactivation DMs</li>
+          <li>Micro-content repurposed from calls</li>
+          <li>Affiliate army with swipe kits</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Clients & work -->
+    <section class="section" id="work" data-section="agency">
+      <div class="section-head reveal">
+        <p class="eyebrow">Done-For-You Client Work</p>
+        <h2 class="section-title">Built Behind The Scenes.</h2>
+        <p class="section-lede">
+          Creators stay on camera. These are the backends we built and run behind them.
+        </p>
+      </div>
+
+      <div class="work">
+        <article class="card case case-feature reveal" style="--d: 0.04s">
+          <div class="case-head">
+            <img class="case-avatar-shot" src="assets/work/3zizpp-profile.webp" alt="Instagram profile of 3zizpp, a Reel creator with 302K followers" width="760" height="240" loading="lazy" />
+            <div>
+              <p class="lane-tag">@3zizpp × Bygone</p>
+              <h3 class="card-title">VIP Bygone: from zero to brand</h3>
+              <p class="card-text">
+                A Reel creator with 302K followers and a brand of their own, Bygone. We built and
+                launched the paid Whop community: a full course on starting your own brand, weekly lives,
+                brand reviews with the community, weekly challenges with prizes and a partnerships
+                room, starting at $29/mo.
+              </p>
+              <ul class="case-stats">
+                <li><strong>302K</strong> followers</li>
+                <li><strong>$29</strong>/mo membership</li>
+                <li><strong>Whop</strong> course + community</li>
+              </ul>
+            </div>
+          </div>
+          <div class="case-shots">
+            <figure>
+              <img src="assets/work/bygone-storefront.webp" alt="VIP Bygone storefront on whop.com/bygone with $29 per month and $79 per 3 months plans" width="1400" height="691" loading="lazy" />
+              <figcaption>Storefront · whop.com/bygone</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/work/bygone-course.webp" alt="Bygone course modules inside the Whop community" width="1600" height="614" loading="lazy" />
+              <figcaption>Course modules, support tickets, meetings &amp; wins</figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <article class="card case reveal" style="--d: 0.1s">
+          <figure>
+            <img src="assets/work/toni-community.webp" alt="Toni Filmmaking Community on Whop" width="1160" height="600" loading="lazy" />
+          </figure>
+          <p class="lane-tag">Toni · Filmmaker</p>
+          <h3 class="card-title">Toni Filmmaking Community</h3>
+          <p class="card-text">
+            A complete Whop home for a filmmaking audience: the course, support tickets, community
+            meetings, a Wins channel and BReeL Games challenges that keep the chat alive.
+          </p>
+        </article>
+
+        <article class="card case case-games reveal" style="--d: 0.16s">
+          <span class="games-mark" aria-hidden="true"><i class="fa-solid fa-trophy"></i></span>
+          <p class="lane-tag">Included in every DFY build</p>
+          <h3 class="card-title">BReeL Games</h3>
+          <p class="card-text">
+            Monthly contests and challenges we run inside every partner community, with prizes
+            of up to <strong>$5K sponsored by BReeL</strong>. Points, leaderboards and badges keep
+            members posting wins, so the main chat never goes quiet.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Guarantee -->
+    <section class="section" id="guarantee" data-section="agency">
+      <div class="guarantee reveal">
+        <p class="eyebrow">The BReeL Guarantee</p>
+        <h2 class="section-title">30 Members In 90 Days.</h2>
+        <p class="section-lede">
+          We hit 30 active paying members in your community within 90 days, or we keep
+          operating 100% free until we do.
+        </p>
+        <ul class="guarantee-points">
+          <li><span>$0</span> upfront investment</li>
+          <li><span>50/50</span> pure performance split</li>
+          <li><span>$7,500</span> setup fee waived for our first 3 partners</li>
+        </ul>
+        <a class="cta cta-static" href="https://calendly.com/yahiawaleed/" data-link="apply" data-utm="guarantee" target="_blank" rel="noopener">Apply to Partner</a>
+      </div>
+    </section>
+
+    <!-- Products & services -->
+    <section class="section" id="products" data-section="products">
+      <div class="section-head reveal">
+        <p class="eyebrow">Products &amp; Services</p>
+        <h2 class="section-title">Pick Your Entry Point.</h2>
+      </div>
+
+      <div class="tabs reveal" role="tablist" aria-label="Filter offers">
+        <button class="tab is-active" type="button" role="tab" aria-selected="true" data-filter="all">All</button>
+        <button class="tab" type="button" role="tab" aria-selected="false" data-filter="products">Products</button>
+        <button class="tab" type="button" role="tab" aria-selected="false" data-filter="software">Software</button>
+        <button class="tab" type="button" role="tab" aria-selected="false" data-filter="agency">Agency</button>
+      </div>
+
+      <div class="offers">
+        <article class="card offer reveal" data-cat="products">
+          <figure class="cover-art">
+            <img src="assets/products/creator-monetization-os.webp" alt="Creator Monetization OS, Notion Edition: product cover" width="768" height="1152" loading="lazy" />
+          </figure>
+          <p class="offer-kind">Low Ticket · Notion OS</p>
+          <h3 class="card-title">Creator Monetization OS <span class="price">$27</span></h3>
+          <p class="card-text">
+            Turn your audience into a monetization-ready system without relying on brand deals.
+            Build your offer ladder, audit your audience, map your funnel and launch with clarity
+            instead of guessing.
+          </p>
+          <ul class="inside">
+            <li>Offer Ladder Builder</li>
+            <li>Audience Audit Dashboard</li>
+            <li>Product Idea Vault</li>
+            <li>Simple Funnel Map</li>
+            <li>Launch Prep Checklist</li>
+            <li>Revenue Calculator</li>
+            <li>Weekly KPI Tracker</li>
+            <li>Swipe-File Library</li>
+          </ul>
+          <a class="offer-link" href="https://payhip.com/b/Dt4ab" data-link="lowTicket" data-utm="products" target="_blank" rel="noopener">Get it for $27 <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        </article>
+
+        <article class="card offer reveal" data-cat="products">
+          <figure class="cover-art">
+            <img src="assets/products/first-profitable-launch-os.webp" alt="First Profitable Launch OS: product cover" width="768" height="1152" loading="lazy" />
+          </figure>
+          <p class="offer-kind">Mid Ticket · Notion OS</p>
+          <h3 class="card-title">First Profitable Launch OS <span class="price">$47</span></h3>
+          <p class="card-text">
+            Plan, write and execute your first profitable launch inside one workspace. No 40-video
+            course, just the system: build the offer, map the launch, write the copy and move buyers.
+          </p>
+          <ul class="inside">
+            <li>14-Day Launch Dashboard</li>
+            <li>Email Sequence Engine</li>
+            <li>DM Close Scripts Vault</li>
+            <li>Objection Handling Bank</li>
+            <li>Launch Calendar</li>
+            <li>Community / Delivery SOP</li>
+            <li>Offer Positioning Lab</li>
+            <li>Cart Open / Close Checklist</li>
+            <li>Upsell &amp; Ascension Map</li>
+            <li>Post-Launch Review Board</li>
+          </ul>
+          <a class="offer-link" href="https://payhip.com/b/HskxF" data-link="midTicket" data-utm="products" target="_blank" rel="noopener">Get it for $47 <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        </article>
+
+        <article class="card offer reveal" data-cat="products">
+          <figure class="cover-art">
+            <img src="assets/products/monetization-campaign.webp" alt="1:1 Monetization Campaign: product cover" width="768" height="1152" loading="lazy" />
+          </figure>
+          <p class="offer-kind">High Ticket · From $197</p>
+          <h3 class="card-title">1:1 Monetization Campaign</h3>
+          <p class="card-text">A one-time, done-with-you campaign that installs your monetization engine. One payment, no ongoing rev-share.</p>
+          <a class="offer-link" href="https://calendly.com/yahiawaleed/" data-link="highTicket" data-utm="products" target="_blank" rel="noopener">Book a call <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        </article>
+
+        <article class="card offer offer-keep reveal" data-cat="software">
+          <p class="offer-kind">Whop App <span class="badge">Coming soon</span></p>
+          <h3 class="card-title">Keep by BReeL</h3>
+          <p class="card-text">
+            Retention for Whop communities. Keep reads your community webhooks (last active, refunds,
+            cancellations), scores the members about to leave, drafts AI retention messages and
+            suggests strategies. Built-in challenges keep the main chat from dying.
+          </p>
+          <span class="offer-link is-disabled" aria-disabled="true">Awaiting Whop approval</span>
+        </article>
+
+        <article class="card offer reveal" data-cat="agency">
+          <p class="offer-kind">Done-For-You · 50/50</p>
+          <h3 class="card-title">Shadow Operating</h3>
+          <p class="card-text">We build, launch and run your whole digital product backend, then split net profit. Zero financial risk to you.</p>
+          <a class="offer-link" href="https://calendly.com/yahiawaleed/" data-link="apply" data-utm="products" target="_blank" rel="noopener">Apply to partner <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        </article>
+
+        <article class="card offer reveal" data-cat="agency">
+          <p class="offer-kind">Done-For-You</p>
+          <h3 class="card-title">Platform Earnings Setup</h3>
+          <p class="card-text">We enroll you in creator reward programs on TikTok, YouTube Shorts and Snapchat, so your views pay twice.</p>
+          <a class="offer-link" href="https://calendly.com/yahiawaleed/" data-link="agency" data-utm="products" target="_blank" rel="noopener">Book a call <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Qualification -->
+    <section class="section" id="qualify" data-section="agency">
+      <div class="qualify card reveal">
+        <div class="qualify-copy">
+          <p class="eyebrow">Who We Partner With</p>
+          <h2 class="section-title">Content&#8209;Rich. Offer&#8209;Poor?</h2>
+          <p class="section-lede">We only take on creators where the numbers already work. If this is you, let's talk.</p>
+          <div class="qualify-ctas">
+            <a class="cta cta-static" href="https://calendly.com/yahiawaleed/" data-link="apply" data-utm="qualify" target="_blank" rel="noopener">Apply to Partner</a>
+            <a class="ghost-link" href="https://payhip.com/b/Dt4ab" data-link="lowTicket" data-utm="qualify" target="_blank" rel="noopener">Not there yet? Start with the $27 Creator Monetization OS</a>
+          </div>
+        </div>
+        <ul class="checks">
+          <li><strong>20k–500k</strong> followers</li>
+          <li><strong>≥ 2.5%</strong> engagement rate</li>
+          <li><strong>10k+</strong> average Reel views</li>
+          <li><strong>60–70%+</strong> Tier-1 audience (US, UK, CA, AU)</li>
+          <li><strong>3+ posts</strong> per week, consistently</li>
+          <li>A clear <strong>transformation story</strong> or expertise, and <strong>no product backend</strong> yet</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Operators & affiliates -->
+    <section class="section" id="operators" data-section="agency">
+      <div class="section-head reveal">
+        <p class="eyebrow">Become An Operator</p>
+        <h2 class="section-title">Learn The Model. Earn With Us.</h2>
+      </div>
+
+      <div class="split">
+        <article class="card reveal" style="--d: 0.05s">
+          <p class="lane-tag">Growth Operator Education</p>
+          <h3 class="card-title">Learn how we do it</h3>
+          <p class="card-text">
+            We teach the shadow operator playbook for free across our socials, with deeper
+            training, Q&amp;As and build-in-public breakdowns inside the paid BReeL community on Whop.
+          </p>
+          <a class="offer-link" href="https://www.instagram.com/breel_ar/" data-link="igBreel" target="_blank" rel="noopener">Follow @breel_ar <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        </article>
+
+        <article class="card reveal" style="--d: 0.12s">
+          <p class="lane-tag">Affiliate Army</p>
+          <h3 class="card-title">40%+ commission</h3>
+          <p class="card-text">
+            Promote BReeL products with done-for-you swipe kits, climb the leaderboards and get
+            paid automatically. It all runs inside our Whop community.
+          </p>
+          <a class="offer-link" href="affiliate.html">Become an affiliate <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact / footer -->
+    <footer class="footer" id="contact" data-section="contact">
+      <div class="footer-cta reveal">
+        <h2 class="section-title">Let's Build Your Engine.</h2>
+        <p class="section-lede">Book a call, or slide into our DMs. We read every one.</p>
+        <a class="cta cta-static" href="https://calendly.com/yahiawaleed/" data-link="apply" data-utm="footer" target="_blank" rel="noopener">Book a Call</a>
+      </div>
+
+      <ul class="team reveal">
+        <li>
+          <a href="https://www.instagram.com/breel_ar/" data-link="igBreel" target="_blank" rel="noopener">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            <span class="team-name">BReeL</span>
+            <span class="team-handle">@breel_ar</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/darealyehi/" data-link="igYahia" target="_blank" rel="noopener">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            <span class="team-name">Yahia Waleed</span>
+            <span class="team-handle">@darealyehi</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/__abnz/" data-link="igHassan" target="_blank" rel="noopener">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            <span class="team-name">Hassan</span>
+            <span class="team-handle">@__abnz</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="footer-base">
+        <img src="assets/logo.webp" alt="" width="28" height="28" />
+        <span>© <span data-year>2026</span> BReeL. The engine behind the face.</span>
+      </div>
+    </footer>
+
+    <script src="main.js" defer></script>
+  </body>
+</html>
