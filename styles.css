@@ -848,6 +848,66 @@ body.menu-open {
     rgba(255, 255, 255, 0.035);
 }
 
+/* "What can you do that I can't?" comparison */
+.compare {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: clamp(14px, 2vw, 22px);
+  align-items: stretch;
+}
+
+.compare-base {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.compare-base .card-title {
+  color: #d6d6d6;
+}
+
+.ticks-muted li {
+  color: #9a9a9a;
+}
+
+.ticks-muted li::before {
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: none;
+}
+
+.compare-ai {
+  border-color: transparent;
+  background:
+    linear-gradient(#0b0b0d, #0b0b0d) padding-box,
+    linear-gradient(135deg, rgba(192, 132, 252, 0.7), rgba(244, 114, 182, 0.45) 40%, rgba(251, 146, 60, 0.45) 70%, rgba(56, 189, 248, 0.7)) border-box;
+  box-shadow: 0 0 60px rgba(168, 85, 247, 0.12);
+}
+
+.compare-ai:hover {
+  border-color: transparent;
+}
+
+.compare-ai .ticks {
+  gap: 14px;
+}
+
+.compare-ai .ticks strong {
+  color: #fff;
+  font-weight: 600;
+}
+
+.compare-close {
+  max-width: 640px;
+  margin: clamp(26px, 4vh, 40px) auto 0;
+  text-align: center;
+  font-size: clamp(15px, 1.5vw, 17px);
+  line-height: 1.6;
+  color: #bdbdbd;
+}
+
+.compare-close strong {
+  color: #fff;
+  font-weight: 600;
+}
+
 /* 14-day phases */
 .phases {
   margin: 0;
@@ -1762,6 +1822,7 @@ body.menu-open {
   }
 
   .split,
+  .compare,
   .phases,
   .offers,
   .work,
@@ -1794,7 +1855,8 @@ body.menu-open {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .calc {
+  .calc,
+  .compare {
     grid-template-columns: 1fr;
   }
 
